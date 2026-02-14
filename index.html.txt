@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Valentine 🤍</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Kotak Pesan */
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 40px 35px;
+      border-radius: 20px;
+      max-width: 600px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      color: #e63946;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.8;
+      font-size: 16px;
+      white-space: pre-line;
+    }
+
+    /* Animasi hati jatuh */
+    .heart {
+      position: absolute;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 20px;
+      animation: floatDown linear infinite;
+    }
+
+    @keyframes floatDown {
+      0% {
+        transform: translateY(-10vh) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(110vh) scale(1.5);
+        opacity: 0;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Happy Valentine Day 🤍</h1>
+    <p>
+Happy valentine days naurah cantik,  
+Maaf banget banget banget hari ini aku jadi kurang merhatiin kamu, kurang kasih sayang ke kamu, kurang semua nya yang seharusnya deserve kamu dapetin hari ini, aku gak mau janji buat make it up to you, tapi aku akan buktiin itu!
+
+di hari kasih sayang ini, mungkin kamu udah liat beberapa orang dirayakan dengan cara mereka, aku tau kita ngga seharusnya ngeliat orang lain sebagai tolak ukur suatu hubungan tapi menurutku kamu bener bener pantes buat ngerasa di sayang di hari kasih sayang ini!
+
+jadi aku mau nunjukin aja aku pengen nyampein ke kamu hari kasih sayang ini, hehehe 🤍
+
+Maaf yaa hari ini blom bisa ketemu, ya Allah dek aku remuk banget, percaya deh aku udah ada plan buat nemuin kamu 253828281619x hari ini cuman takdir emang belum bisa nemuin kita hari ini.  
+MUNGKIN AKU MASIH BISA NYAMPERIN KAMU MALEM INI JUGA, tapi di sisi lain aku malah takut kenapa napa dan gabisa ngebahagiain kamu lagi kalo kenapa napa, jadi i'll take some rest first before make u happier 🤍
+
+Maaf yaa dek kalo ngga semulus yang lain, tapi aku jalanin jalan yg nggak mulus itu demi kamu,  
+selamat hari kasih sayang cantik 🫶🏻
+    </p>
+  </div>
+
+  <!-- Banyak Hati -->
+  <script>
+    const hearts = 40;
+    for (let i = 0; i < hearts; i++) {
+      const heart = document.createElement('div');
+      heart.className = 'heart';
+      heart.innerHTML = '🤍';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+      heart.style.fontSize = (16 + Math.random() * 20) + 'px';
+      document.body.appendChild(heart);
+    }
+  </script>
+
+</body>
+</html>
